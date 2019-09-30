@@ -1,0 +1,37 @@
+---
+title: 'Potential Outcomes and Estimands'
+author: "Marcus Tannenberg"
+date: "9/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Reading notes
+
+FEDAI Chapter 2 pp. 22-30
+
+
+#### Notation
+
+Some notation going forward: 
+
+$i$ refers to subects 1 through $N$. 
+
+$d_i$ indicates if the *i*th subject is treated. ($d_i = 1$ is treated, $d_i = 0$ is not)
+
+$Y_i(1)$ is the potential outcome if the *i*th subject were treated, and $Y_i(0)$ the potential outcome if not treated. 
+
+
+**The Average Treatment Effect (ATE)** is defined as the sum of $\tau_i$ (all subject level treatment effects) divided by the sum of the number of subjects: 
+
+$$
+ATE = \frac{1}{N}\sum_{i=1}^N \tau_i = \frac{1}{N}\sum_{i=1}^N (Y_i(1)-Y_i(0))
+$$
+
+
+### Notes from class
+
+
